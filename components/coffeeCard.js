@@ -4,10 +4,30 @@ import { themeColors } from '../theme'
 import { useNavigation } from '@react-navigation/native'
 import { StarIcon } from 'react-native-heroicons/solid';
 import { PlusIcon } from 'react-native-heroicons/outline';
+import { chestItems,absItems, bicepsItems, backItems, legsItems } from '../constants';
 const {width, height} = Dimensions.get('window');
 const ios = Platform.OS == 'ios';
 export default function CoffeeCard({item}) {
   const navigation = useNavigation();
+  let exercises;
+  switch(item.id){
+    case 1:{
+      exercises = chestItems
+    }
+    case 2:{
+      exercises = legsItems
+    }
+    case 3:{
+      exercises = absItems
+    }
+    case 4:{
+      exercises = backItems
+    }
+    case 5:{
+      exercises = bicepsItems
+    }
+  }
+
   return (
 
       <View 
@@ -58,9 +78,9 @@ export default function CoffeeCard({item}) {
               shadowOffset: {width: 0, height: 40},
               shadowOpacity: 0.8,
             }} className="flex-row justify-between items-center mb-5">
-              <Text className="text-white font-bold text-lg">exercise count: {item.count}</Text>
+              
               <TouchableOpacity 
-              onPress={()=> navigation.navigate('Product', {...item})}
+              onPress={()=> navigation.navigate('Exercise', exercises)}
               style={{
                 shadowColor: 'black',
                 shadowRadius: 40,
@@ -70,10 +90,7 @@ export default function CoffeeCard({item}) {
                 <PlusIcon size="25" strokeWidth={2} color={themeColors.bgDark} />
               </TouchableOpacity>
             </View>
-            
-            
           </View>
-
       </View>
     
   )

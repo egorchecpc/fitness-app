@@ -5,7 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import { Dimensions, LogBox, Platform, Text, View } from 'react-native';
 import ProductScreen from '../screens/ProductScreen';
 import { themeColors } from '../theme';
-
+import ExerciseScreen from '../screens/ExerciseScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {HomeIcon as HomeOutline, HeartIcon as HeartOutline, ShoppingBagIcon as BagOutline } from 'react-native-heroicons/outline';
 import {HomeIcon as HomeSolid, HeartIcon as HeartSolid, ShoppingBagIcon as BagSolid} from 'react-native-heroicons/solid';
@@ -25,7 +25,7 @@ export default function AppNavigation() {
         contentStyle: {backgroundColor: 'white'}
       }}>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeTabs} />
-        <Stack.Screen name="Product" options={{headerShown: false}} component={ProductScreen} />
+        <Stack.Screen name="Exercise" options={{headerShown: false}} component={ExerciseScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

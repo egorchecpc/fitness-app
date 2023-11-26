@@ -2,6 +2,10 @@
 // don't worry, you can find this data in the git repo 
 // you can find the git repo link in the description ;)
 
+
+
+
+
 export const categories = [
   {
     id: 1,
@@ -33,7 +37,7 @@ export const coffeeItems = [
     important: '7/10',
     stars: '4.6',
     image: require('../assets/images/muscles1.png'),
-    desc: 'The taste of coffee can vary depending on factors such as the type of beans, roast level, brewing method, and the addition of any flavors or sweeteners.'
+    desc: 'The taste of coffee can vary depending on factors such as the type of beans, roast level, brewing method, and the addition of any flavors or sweeteners.',
   },
   
   {
@@ -74,4 +78,43 @@ export const coffeeItems = [
     desc: 'The taste of coffee can vary depending on factors such as the type of beans, roast level, brewing method, and the addition of any flavors or sweeteners.'  },
   
 
+]
+
+export const chestItems = [
+  {
+    id:1,
+    name:'Dick',
+  },
+  {
+    id:2,
+    name:'Suck',
+  }
+]
+
+export const legsItems = [
+  {
+    id:1,
+    name:'Chest',
+  }
+]
+
+export const absItems = [
+  {
+    id:1,
+    name:'Chest',
+  }
+]
+
+export const backItems = [
+  {
+    id:1,
+    name:'Chest',
+  }
+]
+
+export const bicepsItems = [
+  {
+    id:1,
+    name:'Chest',
+  }
 ]

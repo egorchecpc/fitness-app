@@ -14,7 +14,7 @@ const ios = Platform.OS == 'ios';
 export default function FavouriteScreen(props) {
   const item = props.route.params;
   const [size, setSize] = useState('small');
-  const navigation = useNavigation();
+
   return (
     <View className="flex-1">
       <StatusBar style="light" />
