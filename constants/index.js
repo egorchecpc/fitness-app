@@ -83,7 +83,7 @@ export const coffeeItems = [
 export const chestItems = [
   {
     id:1,
-    name:'Dick',
+    name:'Chest',
   },
   {
     id:2,
@@ -94,27 +94,31 @@ export const chestItems = [
 export const legsItems = [
   {
     id:1,
-    name:'Chest',
+    name:'Legs',
+    idiot:1
   }
 ]
 
 export const absItems = [
   {
     id:1,
-    name:'Chest',
+    name:'Abs',
+    idiot:2
   }
 ]
 
 export const backItems = [
   {
     id:1,
-    name:'Chest',
+    name:'Back',
+    idiot:3
   }
 ]
 
 export const bicepsItems = [
   {
     id:1,
-    name:'Chest',
+    name:'Biceps',
+    idiot:4
   }
 ]

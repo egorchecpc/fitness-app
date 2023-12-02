@@ -5,10 +5,10 @@ import { useNavigation } from '@react-navigation/native'
 import { StarIcon } from 'react-native-heroicons/solid';
 import { PlusIcon } from 'react-native-heroicons/outline';
 
-function ExerciseCard(exercise) {
-  console.log(exercise)
+function ExerciseCard({exercise}) {
+  
   return (
-    <View className="flex-1 relative bg-white">
+    <View>
       <Text>{exercise.name}</Text>
     </View>
     

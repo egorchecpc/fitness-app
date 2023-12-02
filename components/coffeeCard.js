@@ -12,22 +12,30 @@ export default function CoffeeCard({item}) {
   let exercises;
   switch(item.id){
     case 1:{
-      exercises = chestItems
+      exercises = chestItems;
+      break;
     }
     case 2:{
-      exercises = legsItems
+      exercises = legsItems;
+      break;
     }
     case 3:{
-      exercises = absItems
+      exercises = absItems;
+      break;
     }
     case 4:{
-      exercises = backItems
+      exercises = backItems;
+      break;
     }
     case 5:{
-      exercises = bicepsItems
+      exercises = bicepsItems;
+      break;
+    }
+    default: {
+      exercises = [];
+      break;
     }
   }
-
   return (
 
       <View 
